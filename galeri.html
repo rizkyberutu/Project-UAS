@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-lap | Galeri </title>
+  <link rel="stylesheet" href="dist/output.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Yeseva+One&display=swap"
+    rel="stylesheet" />
+
+
+  <!-- Dark Mode -->
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Header Section Start -->
+  <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent">
+    <div class="container">
+      <div class="relative flex items-center justify-between">
+        <div class="px-4">
+          <a href="#home" class="block py-6 text-lg font-bold text-primary">e-lap</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+            <span class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+            <span class="transition duration-300 ease-in-out hamburger-line"></span>
+            <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
+          </button>
+
+          <nav id="nav-menu"
+            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:shadow-slate-500">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="index.html"
+                  class="flex font-semibold py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white uppercase">Beranda</a>
+              </li>
+              <li class="group">
+                <a href="galeri.html"
+                  class="flex font-semibold py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white uppercase">Galeri</a>
+              </li>
+              <li class="group">
+                <a href="pesan.html"
+                  class="flex font-semibold py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white uppercase">Pesan</a>
+              </li>
+
+              <li class="group">
+                <a href="blog.html"
+                  class="flex font-semibold py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white uppercase">Blog</a>
+              </li>
+              <li class="flex items-center pl-8 mt-3 lg:mt-0">
+                <div class="flex">
+                  <span class="mr-2 text-sm text-slate-500">light</span>
+                  <input type="checkbox" class="hidden" id="dark-toggle">
+                  <label for="dark-toggle">
+                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                      <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
+                      </div>
+                    </div>
+                  </label>
+                  <span class="ml-2 text-sm text-slate-500">dark</span>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Section End -->
+
+  <!-- Hero Section Start -->
+  <section class="hero  mx-auto pt-36 pb-12 px-5 dark:bg-dark">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-3xl mx-auto mb-16 text-center">
+          <h4 class="mb-2 text-lg font-semibold text-primary md:text-lg">
+            Warna-Warni Kemenangan dan Semangat
+          </h4>
+          <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl dark:text-white">
+            GALERI
+          </h2>
+          <p class="font-medium text-md text-secondary md:text-lg">
+            Terbenam dalam keindahan visual olahraga melalui galeri kami. Tiap gambar adalah kisah kegembiraan,
+            dedikasi, dan prestasi. Rasakan kekuatan energi setiap momen dan temukan semangat olahraga yang tulus di
+            setiap klik galeri e-lap!
+          </p>
+        </div>
+      </div>
+
+
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="dist/img/galeri/basket-medan-arena.png" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="dist/img/galeri/futsal-gama.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="dist/img/galeri/tennis-lawud-soewoendo.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="dist/img/galeri/futsal-village.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="dist/img/galeri/basket-sei-serayu.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="dist/img/galeri/tennis-USU.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="dist/img/galeri/minsoc-AW-mini-soccer.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="dist/img/galeri/minsoc-zatan-mini-soccer.png" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="dist/img/galeri/basket-benteng.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="dist/img/galeri/basket-total-2.png" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="dist/img/galeri/futsal-gama.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg" src="dist/img/galeri/futsal-total-1.jpg" alt="">
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
+  <!-- Footer Start -->
+  <footer class="pt-24 pb-12 bg-dark">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full mb-12 font-medium px4 text-slate-300 md:w-2/4">
+          <h2 class="mb-5 text-4xl font-bold text-primary">e-lap</h2>
+          <h3 class="mb-2 text-2xl font-bold">Hubungi Kami</h3>
+          <p>lapanganonline@gmail.com</p>
+          <p>Jl. Alumni No.9, Padang Bulan, Kec. Medan Baru, <br class="hidden lg:block" /> Kota Medan, Sumatera Utara
+            20155</p>
+          <p>Medan</p>
+        </div>
+        <div class="w-full px-4 mb-12 md:w-1/4">
+          <h3 class="mb-5 text-xl font-semibold text-white">Kategori Tulisan</h3>
+          <ul class="text-slate-300 ">
+            <li>
+              <a href="#" class="inline-block mb-3 text-base hover:text-primary">Sepak Bola</a>
+            </li>
+            <li>
+              <a href="#" class="inline-block mb-3 text-base hover:text-primary">Badminton</a>
+            </li>
+            <li>
+              <a href="#" class="inline-block mb-3 text-base hover:text-primary">Basket</a>
+            </li>
+            <li>
+              <a href="#" class="inline-block mb-3 text-base hover:text-primary">Tennis</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full px-4 mb-12 md:w-1/4">
+          <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
+          <ul class="text-slate-300 ">
+            <li>
+              <a href="index.html" class="inline-block mb-3 text-base hover:text-primary">Beranda</a>
+            </li>
+            <li>
+              <a href="galeri.html" class="inline-block mb-3 text-base hover:text-primary">Galeri</a>
+            </li>
+            <li>
+              <a href="pesan.html" class="inline-block mb-3 text-base hover:text-primary">Pesan</a>
+            </li>
+            <li>
+              <a href="blog.html" class="inline-block mb-3 text-base hover:text-primary">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="w-full pt-10 border-t border-slate-700">
+        <div class="flex items-center justify-center mb-5">
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/riizky.__/" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white">
+            <svg role="img" width="24" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Instagram</title>
+              <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+            </svg>
+          </a>
+
+          <!-- Twitter -->
+          <a href="https://twitter.com/kybeeeyy" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white">
+            <svg role="img" width="24" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Twitter</title>
+              <path
+                d="M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148 13.98 13.98 0 0 0 11.82 8.292a4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z" />
+            </svg>
+          </a>
+
+          <!-- Github -->
+          <a href="https://twitter.com/kybeeeyy" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white">
+            <svg role="img" width="24" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>GitHub</title>
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+        </div>
+        <p class="text-xs font-medium text-center text-slate-500">Dibuat oleh <a href="https://instagram.com/riizky.__"
+            target="_blank" class="font-bold text-primary">Kelompok 4</a>, menggunakan <a href="https://tailwindcss.com"
+            target="_blank" class="font-bold text-sky-500">Tailwind CSS 3</a></p>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Back To Top Start -->
+  <a href="#" id="to-top"
+    class="fixed z-[9999] bottom-4 right-4 p-4 hidden h-14 w-14 bg-primary rounded-full justify-center items-center hover:animate-pulse">
+    <span class="block w-5 h-5 mt-2 rotate-45 border-t-2 border-l-2">
+    </span>
+  </a>
+  <!-- Back To Top End -->
+
+  <!-- Custom JS -->
+  <script src="dist/js/script.js"></script>
+
+</body>
+
+</html>

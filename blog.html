@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-lap | Blog</title>
+  <link rel="stylesheet" href="dist/output.css" />
+
+  <script>
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Header Section Start -->
+  <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent">
+    <div class="container">
+      <div class="relative flex items-center justify-between">
+        <div class="px-4">
+          <a href="#home" class="block py-6 text-lg font-bold text-primary">e-lap</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+            <span class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+            <span class="transition duration-300 ease-in-out hamburger-line"></span>
+            <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
+          </button>
+
+          <nav id="nav-menu"
+            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:shadow-slate-500">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="index.html"
+                  class="flex font-semibold py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white uppercase">Beranda</a>
+              </li>
+              <li class="group">
+                <a href="galeri.html"
+                  class="flex font-semibold py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white uppercase">Galeri</a>
+              </li>
+              <li class="group">
+                <a href="pesan.html"
+                  class="flex font-semibold py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white uppercase">Pesan</a>
+              </li>
+
+              <li class="group">
+                <a href="blog.html"
+                  class="flex font-semibold py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white uppercase">Blog</a>
+              </li>
+              <li class="flex items-center pl-8 mt-3 lg:mt-0">
+                <div class="flex">
+                  <span class="mr-2 text-sm text-slate-500">light</span>
+                  <input type="checkbox" class="hidden" id="dark-toggle">
+                  <label for="dark-toggle">
+                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                      <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
+                      </div>
+                    </div>
+                  </label>
+                  <span class="ml-2 text-sm text-slate-500">dark</span>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Section End -->
+
+  <section id="blog" class="pb-32 pt-36 bg-slate-100 dark:bg-dark">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-2xl mx-auto mb-16 text-center">
+          <h4 class="mb-2 text-lg font-semibold text-primary md:text-lg">BLOG</h4>
+          <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl dark:text-white">Tulisan Terkini</h2>
+          <p class="font-medium text-md text-secondary md:text-lg">Terhubung dengan inspirasi olahraga terbaru melalui
+            Blog e-lap. Jelajahi Tulisan Terkini kami untuk wawasan terkini, tips berguna, dan kisah-kisah inspiratif di
+            dunia olahraga.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="mb-10 overflow-hidden bg-wh ite shadow-lg rounded-xl border dark:border-white dark:bg-slate-800">
+            <img src="dist/img/blog/blog-bola-1.jpg" alt="Transfermarket" border dark:border-white class="w-full">
+            <div class="px-6 py-8">
+              <h3>
+                <a href="#"
+                  class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Manchester
+                  City Favorit Boyong Bintang Piala Dunia U-17 Indonesia! 'Reinkarnasi Lionel Messi' Jadi Rebutan City,
+                  Real Madrid, & Barcelona</a>
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary truncate h-20">Manchester City difavoritkan untuk <br>
+                memboyong wonderkid River Plate dan Argentina, Claudio Echeverri. Bintang 17 tahun tersebut dilirik oleh
+                <br>
+                raksasa-raksasa Eropa lain seperti Real Madrid, Barcelona, hingga Paris Saint-Germain, namun The
+                Citizens diunggulkan memenangkan persaingan transfer ini mengingat mereka memiliki hubungan yang baik
+                dengan River Plate setelah berkat transfer Julian Alvarez pada 2022, menurut Mirror.
+              </p>
+              <a href="https://www.goal.com/id/daftar/manchester-city-claudio-echeverri-piala-dunia-u-17-indonesia-lionel-messi-real-madrid-barcelona/bltd40f5e8e8373fde5#cs6a0d25ac98f32ce2"
+                class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
+          <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl border dark:border-white dark:bg-slate-800">
+            <img src="dist/img/blog/blog-bola-2.jpg" alt="Programming" class="w-full h-56">
+            <div class="px-6 py-8">
+              <h3>
+                <a href="#"
+                  class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Juara
+                  Piala Dunia U-17 di Indonesia, Pemain Timnas Jerman U-17 ini Jadi Incaran Manchester United</a>
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary truncate h-20">Ada rumor menarik datang dari
+                Manchester United. Tim berjuluk Setan Merah itu dilaporkan berminat untuk merekrut striker Timnas Jerman
+                U-17, Max Moerstedt. <br>
+
+                Seperti yang sudah diketahui, Piala Dunia U-17 baru saja selesai digelar pada pekan lalu. Timnas Jerman
+                U-17 berhasil keluar sebagai juara setelah mereka mengalahkan Timnas Prancis U-17 di partai final yang
+                digelar di Stadion Manahan, Solo. <br>
+
+                Keberhasilan Jerman menjuarai turnamen ini elit menjadi berkah tersendiri bagi para penggawa mereka.
+                Pasalnya klub-klub besar Eropa dilaporkan mengamati aksi sejumlah pemain tersebut.
+
+                90min melaporkan bahwa ada satu pemain timnas Jerman U-17 yang menarik perhatian MU. Ia adalah sang
+                ujung tombak, Max Moerstedt.
+              </p>
+              <a href="https://www.bola.net/inggris/juara-piala-dunia-u-17-di-indonesia-pemain-timnas-jerman-u-17-ini-jadi-incaran-manchester-uni-97c413.html"
+                class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
+          <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl border dark:border-white dark:bg-slate-800">
+            <img src="dist/img/blog/blog-bola-3.jpg" alt="Arsenal" class="w-full h-56">
+            <div class="px-6 py-8">
+              <h3>
+                <a href="#"
+                  class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Arsenal
+                  Tunjukkan Ketertarikannya Pada Gelandang Muda Juventus</a>
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary truncate h-20">Arsenal dikabarkan tertarik pada Kenan
+                Yildiz, gelandang muda milik Juventus.<br>
+
+                Kenan saat ini masih berusia 18 tahun. Ia gabung dengan Juventus pada tahun 2022 lalu dengan status
+                pemain muda.<br>
+
+                Sebelumnya, Kenan berstatus sebagai pemain muda Bayern Munchen. Ia menimba ilmu di sana dari tahun
+                2012.
+
+                Namun mulai tahun 2023 ini, Kenan sudah dipercaya gabung skuad senior Juventus. Ia juga mulai menembus
+                skuad Timnas Turki dan mencatatkan tiga caps sejauh ini.
+              </p>
+              <a href="https://www.bola.net/inggris/juara-piala-dunia-u-17-di-indonesia-pemain-timnas-jerman-u-17-ini-jadi-incaran-manchester-uni-97c413.html"
+                class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
+          <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl border dark:border-white dark:bg-slate-800">
+            <img src="dist/img/blog/blog-basket-1.jpg" alt="Basket" class="w-full h-56">
+            <div class="px-6 py-8">
+              <h3>
+                <a href="#"
+                  class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Hari
+                  yang Magis di Indonesia Arena</a>
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary truncate h-20">Jumat, 17 November 2023, saya kira akan
+                berlalu begitu saja. Ternyata saya salah. Hari ini, berlalu dengan sangat luar biasa. <br>
+
+                Saya tak menyangka, Indonesia Arena akan menjadi tempat yang magis di hari itu. Saya tak menyangka,
+                bahwa final antarpelajar SMA di Jakarta bisa menjadi sebuah tontonan yang luar biasa, dramatis,
+                emosional, dan menyenangkan untuk 12.000 orang yang hadir di sana. <br> Belum lagi, ratusan ribu layar
+                yang juga turut menyalurkan seluruh rasa campur-aduk yang tersaji sepanjang sore hingga jelang tengah
+                malam itu.
+              </p>
+              <a href="https://www.mainbasket.com/r/15846/hari-yang-magis-di-indonesia-arena"
+                class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
+          <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl border dark:border-white dark:bg-slate-800">
+            <img src="dist/img/blog/blog-basket-2.jpg" alt="Basket" class="w-full h-56">
+            <div class="px-6 py-8">
+              <h3>
+                <a href="#"
+                  class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Final
+                  SMA Rasa NBA (2023)</a>
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary truncate h-20">Final pertama DBL 2004 di Surabaya, di
+                GOR Kertajaya. Kemudian 19 tahun kemudian: Final Honda DBL with Kopi Good Day 2023 di Jakarta, di
+                Indonesia Arena. <br />
+
+                Teman-teman pemerhati basket Indonesia mungkin mengikuti apa yang terjadi pada Jumat, 17 November lalu.
+                Lebih dari 12.000 penonton meramaikan Indonesia Arena di kawasan Gelora Bung Karno, Senayan. Menyaksikan
+                babak final Honda DBL with Kopi Good Day 2023 seri DKI Jakarta. <br />
+
+                Final liga SMA tersebut memecahkan rekor penonton terbanyak laga final di Indonesia. Yang sebelumnya
+                dipegang final National Basketball League (NBL) Indonesia 2011-2012, antara Satria Muda dan Aspac, di
+                Jogjakarta. Waktu itu, 8.000 orang menyesaki GOR UNY.
+              </p>
+              <a href="https://www.happywednesday.id/r/301/final-sma-rasa-nba-2023"
+                class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
+          <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl border dark:border-white dark:bg-slate-800">
+            <img src="dist/img/blog/blog-basket-3.jpg" alt="Basket" class="w-full h-56">
+            <div class="px-6 py-8">
+              <h3>
+                <a href="#"
+                  class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">IBL
+                  Kerja Sama dengan Liga Basket Nasional</a>
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary truncate h-20">Indonesian Basketball League (IBL)
+                terus bergerak untuk meningkatkan kualitas liga basket profesional tanah air. <br /> Mereka bekerja sama
+                dengan liga bola basket profesional Jepang, B.League. Kerja sama ini bertujuan agar industri bola basket
+                Indonesia bisa menjadi bisnis yang berkelanjutan. <br />
+
+                Dalam jumpa pers di Hotel Atlet Century, Jakarta pada Selasa (5/12) itu, Dirut IBL Junas Miradiarsyah
+                mengatakan ada beberapa faktor yang membuat Jepang bisa menjadi tolok ukur untuk basket Indonesia.</p>
+
+              <a href="https://www.mainbasket.com/r/15981/ibl-kerja-sama-dengan-b-league-untuk-tingkatkan-kualitas-liga"
+                class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="mb-10 overflow-hidden bg-wh ite shadow-lg rounded-xl border dark:border-white dark:bg-slate-800">
+            <img src="dist/img/blog/blog-badmin-1.jpg" alt="Badminton" class="w-full h-56">
+            <div class="px-6 py-8">
+              <h3>
+                <a href="#"
+                  class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Rekap
+                  Hasil Final Syed Modi International 2023 - Gelar Kedua Dejan/Gloria, Jepang Kecolongan di Nomor
+                  Tunggal dan Ganda Putra</a>
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary truncate h-20">Dejan/Gloria memastikan naik podium
+                kampiun setelah menaklukkan Yuki Kaneko/Misaki Matsutomo (Jepang) lewat pertandingan dramatis, 20-22,
+                21-19, 25-23 di BBD U.P Badminton Academy, Lucknow, India, Minggu (3/12/2023). <br />
+
+                Bagi Dejan/Gloria, ini merupakan gelar pertama mereka tahun ini. Namun secara keseluruhan ini adalah
+                titel kedua dalam turnamen BWF World Tour setelah Vietnam Open 2022. <br />
+
+                Hasil laga ini membuat Dejan/Gloria menambah catatan keunggulan atas ganda campuran peringkat ke-24
+                dunia itu menjadi 3-1.</p>
+
+              <a href="https://www.bolasport.com/read/313961092/rekap-hasil-final-syed-modi-international-2023-gelar-kedua-dejangloria-jepang-kecolongan-di-nomor-tunggal-dan-ganda-putra"
+                class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
+          <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl border dark:border-white dark:bg-slate-800">
+            <img src="dist/img/blog/blog-badmin-2.jpg" alt="Badminton" class="w-full h-56">
+            <div class="px-6 py-8">
+              <h3>
+                <a href="#"
+                  class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Tembus
+                  Ranking 10 Besar Dunia, Ini Perbedaan yang Dirasakan Gregoria Mariska Tunjung</a>
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary truncate h-20">Tunggal putri Indonesia, Gregoria
+                Mariska Tunjung berhasil memuhi targetnya di 2023 ini dengan menembus posisi ranking 10 besar dunia BWF.
+                Gregoria pun merasa ada perbedaan ketika menjadi 10 tunggal putri terbaik dunia, salah satunya adalah
+                hasil undian kini jauh lebih mudah dari sebelumnya. <br />
+
+                Seperti yang diketahui akhir tahun lalu Gregoria memiliki target pribadi untuk masuk ke peringkat 10
+                besar dunia di 2023. Kala itu, dirinya berada di peringkat 15 dunia dan memang mulai menunjukkan
+                tanda-tanda peningkatan performa. <br />
+
+                Benar saja, sepanjang 2023, performa pemain berusia 24 tahun itu bisa dibilang meningkat pesat dibanding
+                tahun-tahun sebelumnya. Pencapaian terbaiknya adalah membuka keran gelar juara turnamen BWF World Tour
+                dalam kariernya di ajang Spain Masters 2023 dan kemudian menambah satu titel lagi di Kumamoto Masters
+                Japan 2023.</p>
+
+              <a href="https://sports.okezone.com/read/2023/12/04/40/2931992/tembus-ranking-10-besar-dunia-ini-perbedaan-yang-dirasakan-gregoria-mariska-tunjung"
+                class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
+          <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl border dark:border-white dark:bg-slate-800">
+            <img src="dist/img/blog/blog-badmin-3.webp" alt="Badminton" class="w-full h-56">
+            <div class="px-6 py-8">
+              <h3>
+                <a href="#"
+                  class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Update
+                  Ranking BWF usai Syed Modi India International 2023: Dejan/Gloria Naik 2 Tingkat</a>
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary truncate h-20">Federasi Bulu tangkis Dunia ( BWF )
+                telah merilis ranking teranyar pada Selasa (5/12/2023) usai turnamen Syed Modi India International 2023
+                rampung digelar pada akhir pekan lalu. Tak banyak perubahan yang dialami oleh para wakil Indonesia,
+                kecuali duet ganda campuran, Dejan Ferdinansyah/Gloria Emanuelle Widjaja. <br /> Dejan/Gloria menjadi
+                satu-satunya wakil Indonesia yang mengalami kenaikkan peringkat dunia pada pekan ini. Mereka naik dua
+                tempat ke urutan 16 dunia dengan torehan 57.386 poin. <br /> Pasalnya, duet PB Djarum itu berhasil
+                menjadi juara Syed Modi India International 2023 pada akhir pekan lalu yang merupakan titel perdana
+                mereka tahun ini. Mereka membungkam pasangan Jepang, Yuki Kaneko/Misaki Matsutomo, di partai final
+                dengan skor 20-22, 19-21 dan 25-23.</p>
+
+              <a href="https://sports.sindonews.com/read/1268747/51/update-ranking-bwf-usai-syed-modi-india-international-2023-dejangloria-naik-2-tingkat-1701756739"
+                class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
+          <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl border dark:border-white dark:bg-slate-800">
+            <img src="dist/img/blog/blog-tennis-1.jpg" alt="Tennis" class="w-full h-56">
+            <div class="px-6 py-8">
+              <h3>
+                <a href="#"
+                  class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Rafael
+                  Nadal Buka-Bukaan Tentang Kekhawatiran Jelang Kembali Bertanding</a>
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary truncate h-20">Selama berpekan-pekan, para penggemar
+                tenis berspekulasi tentang apakah petenis berkebangsaan Spanyol akan kembali ke turnamen ATP atau tidak.
+                Hal tersebut benar-benar mirip dengan pekan-pekan jelang French Open di mana para penggemar juga
+                memiliki banyak spekulasi tentang sesuatu yang tidak mungkin diketahui siapa pun. <br /> Hal yang sama
+                terjadi, meskipun para penggemar mendapatkan sejumlah petunjuk bahwa mantan petenis peringkat 1 dunia
+                akan segera kembali bertanding. Ia akhirnya mengunggah kabar teranyar tentang dirinya melalui media
+                sosial dengan mengkonformasi bahwa ia akan kembali berkompetisi di Brisbane. Bahkan jika ia adalah salah
+                satu petenis terbaik dalam sejarah, ia masih memiliki keraguan sebelum melakukannya. <br /> Petenis yang
+                telah dikaruniani satu orang buah hati sendiri mengungkapkan hal tersebut melalui sebuah video di mana
+                ia mengakui bahwa ada keraguan, ketakutan, dan sesuatu di antara keduanya.</p>
+
+              <a href="https://www.ligaolahraga.com/tenis/rafael-nadal-buka-bukaan-tentang-kekhawatiran-jelang-kembali-bertanding"
+                class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
+          <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl border dark:border-white dark:bg-slate-800">
+            <img src="dist/img/blog/blog-tennis-2.jpg" alt="Tennis" class="w-full h-56">
+            <div class="px-6 py-8">
+              <h3>
+                <a href="#"
+                  class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Novak
+                  Djokovic Awali Pekan Ke-402 Sebagai Petenis Peringkat 1 Dunia</a>
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary truncate h-20">Daftar pencapaian petenis berkebangsaan
+                Serbia cukup panjang dan kadang-kadang anda harus berusaha keras untuk menunjukkan betapa hebatnya sang
+                petenis. Pekan ini, ia memasuki pekan ke-402 sebagai petenis peringkat 1 dunia dan hal tersebut
+                merupakan pekan yang lebih lama dibandingkan pekan gabungan dari petenis aktif lain di turnamen ATP.
+                <br />Jika anda mengumpulkan semua petenis aktif lain saat ini, petenis yang telah mengantongi 24 gelar
+                Grand Slam memiliki pekan yang lebih banyak sebagai petenis peringkat 1 dunia daripada gabungan semua
+                petenis aktif tersebut. Hal tersebut merupakan perbandingan yang cukup menggelikan karena semakin anda
+                menelusuri daftarnya, semakin sedikit pekan yang akan anda temukan, tetapi hal tersebut hanya
+                menunjukkan betapa hebat sang petenis. <br /> Perbandingan regular sudah tidak cukup lagi karena kita
+                tahu bahwa ia memiliki lebaih banyak hal dibandingkan petenis lain. Jadi, anda harus memasukkan petenis
+                lain juga untuk menunjukkan betapa impresif dirinya. Lagipula, pekan-pekan yang ia habiskan sebagai
+                petenis peringkat 1 dunia adalah sesuatu yang menjadi obsesinya selama beberapa waktu.
+              </p>
+
+              <a href="https://www.ligaolahraga.com/tenis/novak-djokovic-awali-pekan-ke-402-sebagai-petenis-peringkat-1-dunia"
+                class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
+          <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl border dark:border-white dark:bg-slate-800">
+            <img src="dist/img/blog/blog-tennis-3.jpg" alt="Tennis" class="w-full h-56">
+            <div class="px-6 py-8">
+              <h3>
+                <a href="#"
+                  class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Pencapaian
+                  Luar Biasa Yang Ditorehkan Carlos Alcaraz Musim 2023</a>
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary truncate h-20">Namun, statistik yang petenis
+                berkebangsaan Spanyol torehkan musim 2023 termasuk luar biasa. Kita membicarakan tentang remaja
+                laki-laki berusia 20 tahun yang menuliskan sejarah di dunia tenis.
+                <br />Petenis yang telah mengantongi dua gelar Grand Slam merupakan petenis peringat 1 dunia termuda
+                dalam sejarah tenis dan musim ini ia juga mencatatkan beberapa rekor. Salah satunya adalah ia menjadi
+                satu-satunya petenis pada musim 2023 yang memenangkan setidaknya satu gelar di ketiga permukaan
+                lapangan, yaitu hard-court, clay-court, dan grass-court. <br /> Dan di lapangan yang setiap musimnya
+                hanya menggelar sedikit turnamen, mantan petenis peringkat 1 dunia memenangkan gelar Wimbledon, sehingga
+                mencegah petenis peringkat 1 dunia, Novak Djokovic untuk memenangkan keempat gelar Grand Slam dalam satu
+                musim.
+              </p>
+
+              <a href="https://www.ligaolahraga.com/tenis/pencapaian-luar-biasa-yang-ditorehkan-carlos-alcaraz-musim-2023"
+                class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:opacity-80">Baca
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-24 pb-12 bg-dark">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full mb-12 font-medium px4 text-slate-300 md:w-2/4">
+          <h2 class="mb-5 text-4xl font-bold text-primary">e-lap</h2>
+          <h3 class="mb-2 text-2xl font-bold">Hubungi Kami</h3>
+          <p>lapanganonline@gmail.com</p>
+          <p>Jl. Alumni No.9, Padang Bulan, Kec. Medan Baru, <br class="hidden lg:block" /> Kota Medan, Sumatera Utara
+            20155</p>
+          <p>Medan</p>
+        </div>
+        <div class="w-full px-4 mb-12 md:w-1/4">
+          <h3 class="mb-5 text-xl font-semibold text-white">Kategori Tulisan</h3>
+          <ul class="text-slate-300 ">
+            <li>
+              <a href="#" class="inline-block mb-3 text-base hover:text-primary">Sepak Bola</a>
+            </li>
+            <li>
+              <a href="#" class="inline-block mb-3 text-base hover:text-primary">Badminton</a>
+            </li>
+            <li>
+              <a href="#" class="inline-block mb-3 text-base hover:text-primary">Basket</a>
+            </li>
+            <li>
+              <a href="#" class="inline-block mb-3 text-base hover:text-primary">Tennis</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full px-4 mb-12 md:w-1/4">
+          <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
+          <ul class="text-slate-300 ">
+            <li>
+              <a href="index.html" class="inline-block mb-3 text-base hover:text-primary">Beranda</a>
+            </li>
+            <li>
+              <a href="galeri.html" class="inline-block mb-3 text-base hover:text-primary">Galeri</a>
+            </li>
+            <li>
+              <a href="pesan.html" class="inline-block mb-3 text-base hover:text-primary">Pesan</a>
+            </li>
+            <li>
+              <a href="blog.html" class="inline-block mb-3 text-base hover:text-primary">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="w-full pt-10 border-t border-slate-700">
+        <div class="flex items-center justify-center mb-5">
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/riizky.__/" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white">
+            <svg role="img" width="24" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Instagram</title>
+              <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+            </svg>
+          </a>
+
+          <!-- Twitter -->
+          <a href="https://twitter.com/kybeeeyy" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white">
+            <svg role="img" width="24" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Twitter</title>
+              <path
+                d="M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148 13.98 13.98 0 0 0 11.82 8.292a4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z" />
+            </svg>
+          </a>
+
+          <!-- Github -->
+          <a href="https://twitter.com/kybeeeyy" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white">
+            <svg role="img" width="24" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>GitHub</title>
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+        </div>
+        <p class="text-xs font-medium text-center text-slate-500">Dibuat oleh <a href="https://instagram.com/riizky.__"
+            target="_blank" class="font-bold text-primary">Kelompok 4</a>, menggunakan <a href="https://tailwindcss.com"
+            target="_blank" class="font-bold text-sky-500">Tailwind CSS 3</a></p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back To Top Start -->
+  <a href="#" id="to-top"
+    class="fixed z-[9999] bottom-4 right-4 p-4 hidden h-14 w-14 bg-primary rounded-full justify-center items-center hover:animate-pulse">
+    <span class="block w-5 h-5 mt-2 rotate-45 border-t-2 border-l-2"> </span>
+  </a>
+  <!-- Back To Top End -->
+
+  <script src="dist/js/script.js"></script>
+
+</body>
+
+</html>
